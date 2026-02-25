@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61", "wheel", "versioneer"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amstools"
+dynamic = ["version"]
+readme = "README.md"
+description = "Atomistic Modelling and Simulation tools for material properties by AMS department of ICAMS, Ruhr Univerisity Bochum"
+authors = [
+    {name = "Yury Lysogorskiy", email = "yury.lysogorskiy@rub.de"},
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = ["material", "properties"]
+dependencies = [
+    "ase",
+    "numpy",
+    "phonopy", 
+    "ruamel.yaml",
+    "pandas",
+    "scipy",
+    "spglib",
+    "tqdm",
+    "matscipy",
+    "scikit-image",
+]
+
+[project.urls]
+Homepage = "https://github.com/ICAMS/amstools"
+
+[project.scripts]
+ams_pipeline = "amstools.cli.ams_pipeline:main"
+ams_collect = "amstools.cli.ams_collect:main"
+ams_calculation = "amstools.cli.ams_calculation:main"
+ams_dft_manager = "amstools.cli.ams_dft_manager:main"
+ams_highthroughput = "amstools.cli.ams_highthroughput:main"
+ams_custodian_vasp = "amstools.cli.ams_custodian_vasp:main"
+ams_webinterface = "amstools.cli.ams_webinterface:main"
+
+[tool.versioneer]
+VCS = "git"
+style = "pep440-pre"
+versionfile_source = "amstools/_version.py"
+tag_prefix = "amstools-"
+parentdir_prefix = "amstools"
+
+
+[tool.setuptools.packages.find]
+include = ["amstools*"]
+exclude = ["*test*"]
