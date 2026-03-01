@@ -1,0 +1,15 @@
+rm mo.xsf mo.cfg POSCAR
+atomsk --create bcc 1.000 H \
+       orient [-101] [1-11] [121] \
+        -duplicate 1 1 20 \
+        -cut above 0.501*BOX z \
+	-shift 0.0 0.0 0.25*BOX mo.xsf
+atomsk mo.xsf mo.cfg
+atomsk mo.xsf -frac POSCAR
+
+# Save different orientations
+#       orient [100] [010] [001] \
+#       orient  [001] [110] [-110] \
+#       orient [121] [-101] [1-11] \
+#       orient [1-11] [121] [-101] \
+#       orient [-101] [1-11] [121] \

@@ -1,0 +1,13 @@
+rm al.xsf al.cfg POSCAR
+atomsk --create diamond 1.000 H \
+       orient [100] [010] [001] \
+        -duplicate 1 1 20 \
+        -cut above 0.501*BOX z \
+	-shift 0.0 0.0 0.25*BOX al.xsf
+atomsk al.xsf al.cfg
+atomsk al.xsf -frac POSCAR
+
+# Save different orientations
+#       orient [100] [010] [001] \
+#       orient [121] [-101] [1-11] \
+#       orient [1-11] [121] [-101] \

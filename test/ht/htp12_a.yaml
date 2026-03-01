@@ -1,0 +1,5 @@
+seed: 42
+global_permutation_type: 'constrained'
+/binaries/bulk/MoPt2/reference/gen_182_MoPt2.cfg:
+- {composition: {EleA: ['H'], EleB: ['Pd']}}
+- static

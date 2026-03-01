@@ -1,0 +1,9 @@
+seed: 42
+composition:
+- Al
+/unaries/bulk/fcc/reference:
+#- Enn-coarse
+- relax
+- murnaghan
+#- elastic
+

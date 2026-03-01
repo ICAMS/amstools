@@ -1,0 +1,4 @@
+include versioneer.py
+include amstools/_version.py
+include amstools/highthroughput/data/*.yaml
+recursive-include amstools/highthroughput/webinterface/resources *

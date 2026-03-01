@@ -1,0 +1,6 @@
+seed: 42
+composition:
+- H
+/unaries/bulk/A15/shaken/A15.shakesmallsuper2corrected.1.cfg:
+- Enn-fine: {nn_distance_range: [1.2, 2.0], nn_distance_step: 0.05}
+- Enn-coarse: {nn_distance_range: [0.6, 4.6], nn_distance_step: 0.2}

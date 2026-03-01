@@ -1,0 +1,47 @@
+queues: {
+
+   my_cluster_normal: {
+    'scheduler': 'slurm',
+    'cores': 32,
+    'max_jobs_in_queue': 100,
+    'walltime': '1-00:00:00',
+    'queuename': 'normal',
+    'commands':
+        [
+         'uss=$(whoami)',
+         'find /dev/shm/ -user $uss -type f -mmin +30 -delete',
+         'source $HOME/.bashrc',
+         'conda activate ams'
+        ]
+   },
+
+   my_cluster_short: {
+    'scheduler': 'slurm',
+    'cores': 32,
+    'max_jobs_in_queue': 150,
+    'walltime': '04:00:00',
+    'queuename': 'short',
+    'commands':
+        [
+         'uss=$(whoami)',
+         'find /dev/shm/ -user $uss -type f -mmin +30 -delete',
+         'source $HOME/.bashrc',
+         'conda activate ams'
+        ]
+   },
+
+   my_cluster_sge_example: {
+    'scheduler': 'sge',
+    'cores': 16,
+    'max_jobs_in_queue': 50,
+    'walltime': '24:00:00',
+    'queuename': 'parallel.q',
+    'system': 'mpi16',
+    'commands':
+        [
+         'source $HOME/.bashrc',
+         'conda activate ams'
+        ]
+   }
+
+}

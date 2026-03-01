@@ -1,0 +1,5 @@
+rm al.xsf al.cfg POSCAR
+atomsk --create fcc 2.000 H \
+        -duplicate 8 8 8 al.xsf
+atomsk al.xsf al.cfg
+atomsk al.xsf -frac POSCAR

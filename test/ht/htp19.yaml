@@ -1,0 +1,7 @@
+seed: 42
+composition:
+- 'Al'
+/unaries/clusters/2-body-bcc-rcut=2-00001.cfg:
+- Enn-local
+/unaries/bulk/A15/shaken/A15.shakesmallsuper2corrected.1.cfg:
+- static

@@ -1,0 +1,21 @@
+# unique name of the DFT configuration
+name: AIMS_PBE_0.125_tight_NM
+# DFT calculator type
+calculator: FHIaims
+# related DFT settings
+xc: pbe
+charge: 0.
+spin: none
+occupation_type: gaussian 0.10
+mixer: pulay
+n_max_pulay: 10
+charge_mix_param: 0.05
+sc_iter_limit: 500
+sc_accuracy_rho: 1.0E-5
+sc_accuracy_eev: 1.0E-3
+sc_accuracy_etot: 1.0E-7
+relativistic: atomic_zora scalar
+compute_forces: True
+sc_accuracy_forces: 1.0E-4
+restart: True
+kmesh_spacing: 0.125

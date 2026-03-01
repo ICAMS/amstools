@@ -2,7 +2,7 @@ name: Publish to PyPI
 on:
   push:
     tags:
-      - 'v*'
+      - 'amstools-*'
 
 jobs:
   build-n-publish:

@@ -1,0 +1,9 @@
+seed: 42
+composition:
+- 'Al'
+- 'Ni'
+- 'Cu'
+- 'Zr'
+- 'Zn'
+/quinaries/bulk/moreprototypesYury/gen_9_D1_3_Al4Ba.cfg:
+- Enn-local

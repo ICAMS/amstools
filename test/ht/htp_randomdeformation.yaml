@@ -1,0 +1,7 @@
+seed: 42
+composition:
+  - 'Mo'
+  - 'Nb'
+
+/binaries/bulk/MoPt2/reference/gen_182_MoPt2.cfg:
+  - randomdeformation

@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+import os
+import shutil
+print("Run mock vasp_std")
+dft_bin_dirname = os.path.dirname(__file__)
+print('dft_bin_dirname=',dft_bin_dirname)
+
+working_dir = os.getcwd()
+print("working_dir=",working_dir)
+for filename in ["vasprun.xml","OUTCAR"]:
+    shutil.copyfile(os.path.join(dft_bin_dirname,filename),
+                    os.path.join(working_dir,filename))
+
+
+shutil.copyfile(os.path.join(working_dir,"POSCAR"), os.path.join(working_dir,"CONTCAR"))
+
+print("Mock vasp_std done")

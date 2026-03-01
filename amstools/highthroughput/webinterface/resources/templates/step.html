@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<H2>Pipeline: {{ name }}</H2>
+<H2>Step: {{ step_name}}</H2>
+<p>Value:</p>
+<pre>
+    {{ value_str | safe }}
+</pre>
+
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

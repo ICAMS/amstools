@@ -1,0 +1,6 @@
+rm bcc.xsf bcc.cfg POSCAR
+atomsk --create bcc 1.000 H \
+        -duplicate 8 8 8 bcc.xsf
+atomsk bcc.xsf bcc.cfg
+atomsk bcc.xsf -frac POSCAR
+rm bcc.xsf

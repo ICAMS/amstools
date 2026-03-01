@@ -1,0 +1,10 @@
+seed: 42
+composition: [Nb, Mo]
+
+#/binaries/bulk/MoPt2/reference/*:
+#- static
+
+/binaries/bulk/C14/by_sites/C14_AAB.cfg:
+- permutation_type: constrained
+- composition: {EleA: ['Mo'], EleB: ['Nb']}
+- static

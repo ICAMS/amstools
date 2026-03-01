@@ -1,0 +1,13 @@
+seed: 42
+composition:
+- 'Ba'
+- 'Ti'
+- 'O'
+/ternaries/bulk/ABO3/reference/ABO3.cfg:
+- composition: {EleA: ['Ba','Ca','Sr'], EleB: ['Ti','Sn'], EleC: ['O']}
+- random: 6
+- Enn-local
+#/ternaries/bulk/ABO3/reference/ABO3:
+#- { composition: {EleA: ['Ba','Ca','Sr'], EleB:['Ti','Sn'], EleC: ['O']}, random: 2 }
+#- random: 10   # 10 random cfg in folder
+#- Enn-local

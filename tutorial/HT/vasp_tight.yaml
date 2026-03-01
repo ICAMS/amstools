@@ -1,0 +1,19 @@
+# unique name of the DFT configuration (500 eV, kspacing 0.125, gaussian 0.1, non-magnetic)
+name: VASP_PBE_500_0.125_0.1_NM
+# DFT calculator type
+calculator: VASP
+# related DFT settings
+xc: pbe
+gamma: True
+setups: recommended
+prec: Accurate
+ediff: 1.0e-6
+encut: 500
+ispin: 0
+nelm: 120
+lreal: False
+lcharg: False
+lwave: False
+ismear: 0
+sigma: 0.1
+kmesh_spacing: 0.125

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<H1>Pipeline: {{ name }}</H1>
+<hr>
+<h2>State:</h2>
+<pre>
+    {{ pipe_state | safe }}
+</pre>
+<hr>
+<h2>Initial structure:</h2>
+<pre>
+     {{ init_atoms | safe }}
+</pre>
+<hr>
+{% if pipe_data|length>0 %}
+<h2>Steps</h2>
+<table id="steps" class="table">
+    <thead>
+    <tr>
+        <th></th>
+        <th>Step name</th>
+        <th>Type</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for state in pipe_data %}
+
+    <tr>
+        <td>{{ loop.index }}</td>
+        <td><a href="/step?name={{ name }}&step_name={{ state['name'] }}"> {{ state["name"] }} </a></td>
+        <td>{{ state["type"] }}</td>
+        <td>{{ state["status"] }}</td>
+    </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p> Pipeline's pipeline.json could not be found at {{ pipeline_fname }}</p>
+{% endif %}
+<hr>
+<a href="/files/{{ name }}">Raw files</a>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(document).ready(function () {
+        $('#steps').DataTable({
+                "createdRow": function (row, data, dataIndex) {
+                    if (data[3] == "calculating") {
+                        $(row).addClass('yellow');
+                    } else if (data[3] == "error") {
+                        $(row).addClass('red');
+                    } else if (data[3] == "finished") {
+                        $(row).addClass('green');
+                    }
+                },
+                "paging": false
+            }
+        );
+
+
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,14 @@
+seed: 42
+composition:
+- 'Al'
+#/unaries/bulk/A15/reference/:
+#- Enn-coarse
+#- Enn-local
+#- relax
+#- elastic
+#- phonons
+/unaries/bulk/A15/shaken/A15.shakesmallsuper2corrected.1.cfg:
+- Enn-local
+#/unaries/clusters/bulkfragments:
+#- random: 2
+#- Enn-local

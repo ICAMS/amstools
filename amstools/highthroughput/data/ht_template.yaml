@@ -1,0 +1,116 @@
+#################################################################
+### Input Highthroughtput 
+#################################################################
+
+seed: 42        #random seed
+
+#################################################################
+### Global input settings:
+#################################################################
+
+## The type of permutation for the atomic species can be chosen among 
+# the possible options: 'cfg', 'atoms', 'wyckoff', 'constrained', 'mixed'
+# (default is 'cfg'). 
+#
+## The 'cfg' is the representation in terms of EleA, EleB, ... 
+# and 'wyckoff' is the mapping of the 'cfg' to a representation in terms of 
+# Wyckoff sites. The 'atoms' mode is given by all the possible 
+# permutations. The 'mixed' option is obtained by mixing the 'atoms' 
+# with the 'wyckoff' representation, therefore in this case we get rid of 
+# symmetry equivalent configurations corresponding to permutations of atoms at 
+# the same Wyckoff sites. The 'constrained' mode allows to specifiy a
+# list of species for each EleA, EleB, .... and select the possible
+# combinations.
+# 
+## Example: given a binary {EleA:1, EleB:2} of Wyckoff type AB2 and 
+# considering 'Al' and 'Ni' we would have:
+#
+# 1) 'cfg':
+# ['Al', 'Ni', 'Ni']
+# ['Ni', 'Al', 'Al']
+# 2) 'wyckoff':
+# ['Al', 'Ni', 'Ni']
+# ['Ni', 'Al', 'Al']
+# 3) 'atoms':
+# ['Al', 'Al', 'Ni']
+# ['Al', 'Ni', 'Al']
+# ['Al', 'Ni', 'Ni']
+# ['Ni', 'Al', 'Al']
+# ['Ni', 'Al', 'Ni']
+# ['Ni', 'Ni', 'Al']
+# 4) 'mixed':
+# ['Al', 'Ni', 'Al']
+# ['Al', 'Ni', 'Ni']
+# ['Ni', 'Al', 'Al']
+# ['Ni', 'Al', 'Ni']
+#
+## In the 'constrained' option one needs to specifiy for each structure below a 
+# dictionary of the possible EleA, EleB, EleC, .... considering a ternary 
+# identified by:
+# { composition: {EleA: ['Ba','Ca','Sr'], EleB:['Ti','Sn'], EleC: ['O']} , random: 3}
+# we would have:
+# [EleA, EleB, EleC] = [['Ba', 'Ti', 'O'], ['Ba', 'Sn', 'O'], ['Ca', 'Ti', 'O'], 
+#                       ['Ca', 'Sn', 'O'], ['Sr', 'Ti', 'O'], ['Sr', 'Sn', 'O']]
+
+## Global permutation type that applies to all the prototypes or folders
+# listed in the structures and pipelines section:
+global_permutation_type: 'atoms'
+
+## Upper bound on the possible number of permutations, if the number 
+# of combinations is larger nsample will be selected randomly: 
+nsample: 100
+
+## Unordered list of chemical species: EleA, EleB, EleC, ...
+composition:
+- 'Mo'
+- 'C'
+
+#################################################################
+### Structures and pipelines settings:
+#################################################################
+
+## The following input is structured as follows:
+#
+# cfg file or directory inside the env variable AMS_STRUCTURE_REPOSITORY_PATH:
+# - pipeline steps (possible pipeline steps: Enn-wide,Enn-fine,Enn-
+# local,murnaghan,elastic,relax,phonons,tp_tetrag,tp_orthogonal,static)
+
+
+## For each pipeline steps it is possible to specify the calculator
+# settings:
+#
+#- Enn-wide: {nn_distance_range: [2.0,  7.0], nn_distance_step: 0.15, fix_kmesh=False}
+#- Enn-fine: {nn_distance_range: [2.0,  7.0], nn_distance_step: 0.15, fix_kmesh=False}
+#- Enn-local: {nn_distance_range: [2.0,  7.0], nn_distance_step: 0.15, fix_kmesh=True}
+#- elastic: {eps_range: 0.015, num_of_point: 5}
+#- murnaghan: {num_of_point=11, volume_range=0.1, fit_order=5}
+
+
+### Option 1: the provided path is a cfg file
+
+/binaries/bulk/SZn_Wurtzite-B4/reference/gen_232_B4_SZn-Wurtzite.cfg:
+- relax
+- murnaghan
+- elastic
+
+### End of option 1
+
+### Option 2: the provided path is a directory
+
+#/ternaries/bulk/ABO3/reference:
+#- random: 10       # number of cfg files to randomly select in the specified folder 
+#- relax
+#- murnaghan
+#- elastic
+
+### End of option 2
+
+## Example of 'constrained' mode where random combinations are chosen among the 
+# possible configurations:
+
+#/ternaries/bulk/ABO3/reference
+#- { composition: {EleA: ['Ba','Ca','Sr'], EleB:['Ti','Sn'], EleC: ['O']} , random: 3}  
+#- random: 10 
+#- relax
+#- murnaghan
+#- elastic

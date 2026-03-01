@@ -1,0 +1,7 @@
+seed: 42
+composition:
+- 'Al'
+- 'Ni'
+- 'Zn'
+/ternaries/bulk/MoPt2/reference/gen_182_MoPt2.cfg:
+- Enn-local

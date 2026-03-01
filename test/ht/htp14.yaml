@@ -1,0 +1,12 @@
+seed: 42
+global_permutation_type: 'mixed'
+nsample: 100
+composition:
+- 'Al'
+- 'Ni'
+- 'Zn'
+/ternaries/bulk/Al3Ti-D0_22/reference/gen_23_D0_22_Al3Ti.cfg:
+- permutation_type: 'atoms'
+- Enn-local
+/ternaries/bulk/MoPt2/reference/gen_182_MoPt2.cfg:
+- Enn-local

@@ -1,0 +1,7 @@
+seed: 42
+composition:
+- 'Al'
+- 'Ni'
+- 'Zn'
+/ternaries/bulk/AsNi-B8_1/reference/gen_34_B8_1_AsNi.cfg:
+- Enn-local

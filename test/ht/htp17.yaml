@@ -1,0 +1,9 @@
+seed: 42
+composition:
+- 'Al'
+- 'Ni'
+- 'Cu'
+- 'Zr'
+- 'Zn'
+/melt_Ag.1000000_with_mapping_elements.cfg:
+- Enn-local

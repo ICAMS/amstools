@@ -1,0 +1,13 @@
+seed: 42
+composition:
+- 'Al'
+- 'Cu'
+/binaries/bulk/MoPt2/reference/gen_182_MoPt2.cfg:
+- Enn-local
+#/binaries/clusters/random:
+#- random: 2
+#- Enn-coarse
+#- Enn-local
+#- relax
+#- elastic
+#- phonons

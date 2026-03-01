@@ -1,0 +1,18 @@
+rm al.xsf al.cfg al.xyz POSCAR
+atomsk --create fcc 1.000 H \
+       orient [100] [01-1] [011] \
+        -duplicate 1 1 20 \
+        -cut above 0.2*BOX z \
+	-shift 0.0 0.0 0.4*BOX \
+	al.xsf cfg xyz
+#atomsk al.xsf al.cfg
+#atomsk al.xsf al.xyz
+atomsk al.xsf -frac POSCAR
+
+# Save different orientations
+#       orient [100] [010] [001] \
+#       orient [121] [-101] [1-11] \
+#       orient [1-11] [121] [-101] \
+#       orient [-101] [1-11] [121] \
+#       orient [110] [-110] [001] \
+#       orient [100] [01-1] [011] \

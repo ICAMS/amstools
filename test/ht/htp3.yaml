@@ -1,0 +1,13 @@
+seed: 42
+composition:
+- 'Al'
+- 'Cu'
+/binaries/bulk/Al2Cu-C16/reference/gen_14_C16_Al2Cu.cfg:
+- Enn-local
+#/binaries/clusters/random:
+#- random: 2
+#- Enn-coarse
+#- Enn-local
+#- relax
+#- elastic
+#- phonons

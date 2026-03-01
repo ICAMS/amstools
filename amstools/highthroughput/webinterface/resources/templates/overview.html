@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<H1>Pipelines</H1>
+
+<table id="pipelines" class="table">
+    <thead>
+    <tr>
+        <th>Calculator</th>
+        <th>Elements</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Timestamp</th>
+        <th>Extra</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for state in states_info %}
+    <tr>
+        <td>{{ state["name"].split("/")[0] }}</td>
+        <td>{{ state["name"].split("/")[1] }}</td>
+        <td><a href="/pipeline?name={{ state['name'] }}">{{ state["name"].split("/")[2:] | join("/") }}</a></td>
+        <td>{{ state["state"]["status"] }}</td>
+        <td>{{ state["state"].get("timestamp") }}</td>
+        <td>{{ str(state["state"]) | truncate(100,True) }}</td>
+    </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(document).ready(function () {
+        $('#pipelines').DataTable({
+                "createdRow": function (row, data, dataIndex) {
+                    if (data[3] == "running") {
+                        $(row).addClass('yellow');
+                    } else if (data[3] == "error") {
+                        $(row).addClass('red');
+                    } else if (data[3] == "finished") {
+                        $(row).addClass('green');
+                    }
+                },
+                "paging": false,
+                "order": [[4, "desc"]]
+            }
+        );
+
+
+    });
+</script>
+{% endblock %}

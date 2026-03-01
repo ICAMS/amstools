@@ -1,0 +1,11 @@
+seed: 42
+composition:
+- 'Al'
+- 'Ni'
+- 'Cu'
+- 'Zr'
+- 'Zn'
+#/binaries/bulk/MoPt2/reference/gen_182_MoPt2.cfg:
+#- Enn-local
+/unaries/bulk/A15/shaken/A15.shakesmallsuper2corrected.1.cfg:
+- Enn-local

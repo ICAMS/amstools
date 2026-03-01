@@ -1,0 +1,546 @@
+# Composition/elements that will be used for structure generation
+composition: [Al]
+
+# list of prototypes and corresponding steps
+/unaries/bulk/A15/reference/: [Enn-wide, Enn-local, relax, elastic,phonons]
+/unaries/bulk/A15/shaken/A15.shakesmallsuper2corrected.*.cfg:  [Enn-local]
+/unaries/bulk/C14/reference/:
+- Enn-wide
+- Enn-local
+- relax
+- elastic
+- phonons
+/unaries/bulk/C15/reference/:
+- Enn-wide
+- Enn-local
+/unaries/bulk/C36/reference/:
+- Enn-wide
+- Enn-local
+/unaries/bulk/M/reference/:
+- Enn-local
+/unaries/bulk/P/reference/:
+- Enn-local
+/unaries/bulk/R/reference/:
+- Enn-local
+/unaries/bulk/Zr4Al3/reference/:
+- Enn-wide
+- Enn-local
+- relax
+/unaries/bulk/aSMC19/deformed/:
+- Enn-local
+/unaries/bulk/aSMC19/reference/:
+- Enn-wide
+- Enn-local
+- relax
+/unaries/bulk/aSMC19/shaken/aSMC19.shakesmallsuper2corrected.1.cfg:
+- Enn-local
+/unaries/bulk/aSMC19/shaken/aSMC19.shakesmallsuper2corrected.2.cfg:
+- Enn-local
+/unaries/bulk/aSMC19/shaken/aSMC19.shakesmallsuper2corrected.3.cfg:
+- Enn-local
+/unaries/bulk/aSMC19/shaken/aSMC19.shakesmallsuper2corrected.4.cfg:
+- Enn-local
+/unaries/bulk/aSMC19/shaken/aSMC19.shakesmallsuper2corrected.5.cfg:
+- Enn-local
+/unaries/bulk/amorphous:
+- static
+/unaries/bulk/bcc/reference/:
+- Enn-wide
+- Enn-fine
+- relax
+- elastic
+- phonons
+/unaries/bulk/bcc/shaken/bcc2.shakesmallsuper2corrected.1.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc2.shakesmallsuper2corrected.2.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc2.shakesmallsuper2corrected.3.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc2.shakesmallsuper2corrected.4.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc2.shakesmallsuper2corrected.5.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc2.shakesmallsuper3corrected.1.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc2.shakesmallsuper3corrected.2.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc2.shakesmallsuper3corrected.3.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc2.shakesmallsuper3corrected.4.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc2.shakesmallsuper3corrected.5.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc8.shake.1.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc8.shake.2.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc8.shake.3.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc8.shake.4.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc8.shake.5.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc8.shakesmall.1.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc8.shakesmall.2.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc8.shakesmall.3.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc8.shakesmall.4.cfg:
+- Enn-local
+/unaries/bulk/bcc/shaken/bcc8.shakesmall.5.cfg:
+- Enn-local
+/unaries/bulk/bct/reference/:
+- Enn-wide
+- Enn-local
+- relax
+- elastic
+- phonons
+/unaries/bulk/betatin/reference/:
+- Enn-wide
+- Enn-local
+- relax
+- elastic
+- phonons
+/unaries/bulk/betatin/shaken/betatin.shakesmallsuper2corrected.1.cfg:
+- Enn-local
+/unaries/bulk/betatin/shaken/betatin.shakesmallsuper2corrected.10.cfg:
+- Enn-local
+/unaries/bulk/betatin/shaken/betatin.shakesmallsuper2corrected.2.cfg:
+- Enn-local
+/unaries/bulk/betatin/shaken/betatin.shakesmallsuper2corrected.3.cfg:
+- Enn-local
+/unaries/bulk/betatin/shaken/betatin.shakesmallsuper2corrected.4.cfg:
+- Enn-local
+/unaries/bulk/betatin/shaken/betatin.shakesmallsuper2corrected.5.cfg:
+- Enn-local
+/unaries/bulk/betatin/shaken/betatin.shakesmallsuper2corrected.6.cfg:
+- Enn-local
+/unaries/bulk/betatin/shaken/betatin.shakesmallsuper2corrected.7.cfg:
+- Enn-local
+/unaries/bulk/betatin/shaken/betatin.shakesmallsuper2corrected.8.cfg:
+- Enn-local
+/unaries/bulk/betatin/shaken/betatin.shakesmallsuper2corrected.9.cfg:
+- Enn-local
+/unaries/bulk/chi/reference/:
+- Enn-wide
+- Enn-local
+- relax
+/unaries/bulk/delta/reference/:
+- Enn-local
+/unaries/bulk/dhcp/deformed/:
+- Enn-local
+/unaries/bulk/dhcp/reference/:
+- Enn-wide
+- Enn-local
+- relax
+- elastic
+- phonons
+/unaries/bulk/dhcp/shaken/dhcp.shake.1.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shake.2.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shake.3.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shake.4.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shake.5.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmall.1.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmall.2.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmall.3.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmall.4.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmall.5.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmallsuper2corrected.1.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmallsuper2corrected.2.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmallsuper2corrected.3.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmallsuper2corrected.4.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmallsuper2corrected.5.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmallsuper3corrected.1.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmallsuper3corrected.2.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmallsuper3corrected.3.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmallsuper3corrected.4.cfg:
+- Enn-local
+/unaries/bulk/dhcp/shaken/dhcp.shakesmallsuper3corrected.5.cfg:
+- Enn-local
+/unaries/bulk/dia/reference/:
+- Enn-wide
+- Enn-fine
+- relax
+- elastic
+- phonons
+/unaries/bulk/dia/shaken/diamondc.shakesmallsuper2corrected.1.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc.shakesmallsuper2corrected.2.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc.shakesmallsuper2corrected.3.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc.shakesmallsuper2corrected.4.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc.shakesmallsuper2corrected.5.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc16.shake.1.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc16.shake.2.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc16.shake.3.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc16.shake.4.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc16.shake.5.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc16.shakesmall.1.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc16.shakesmall.2.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc16.shakesmall.3.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc16.shakesmall.4.cfg:
+- Enn-local
+/unaries/bulk/dia/shaken/diamondc16.shakesmall.5.cfg:
+- Enn-local
+/unaries/bulk/diahex/reference/:
+- Enn-wide
+- Enn-local
+- relax
+- elastic
+- phonons
+/unaries/bulk/fcc/reference/:
+- Enn-wide
+- Enn-fine
+- relax
+- elastic
+- phonons
+/unaries/bulk/fcc/shaken/fcc4.shakesmallsuper2corrected.1.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc4.shakesmallsuper2corrected.2.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc4.shakesmallsuper2corrected.3.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc4.shakesmallsuper2corrected.4.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc4.shakesmallsuper2corrected.5.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc4.shakesmallsuper3corrected.1.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc4.shakesmallsuper3corrected.2.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc4.shakesmallsuper3corrected.3.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc4.shakesmallsuper3corrected.4.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc4.shakesmallsuper3corrected.5.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc8.shake.1.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc8.shake.2.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc8.shake.3.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc8.shake.4.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc8.shake.5.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc8.shakesmall.1.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc8.shakesmall.2.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc8.shakesmall.3.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc8.shakesmall.4.cfg:
+- Enn-local
+/unaries/bulk/fcc/shaken/fcc8.shakesmall.5.cfg:
+- Enn-local
+/unaries/bulk/graphene/reference/:
+- Enn-wide
+- Enn-local
+/unaries/bulk/graphiteh/deformed/:
+- Enn-local
+/unaries/bulk/graphiteh/reference/:
+- Enn-wide
+- Enn-local
+/unaries/bulk/grid/reference/:
+- Enn-local
+/unaries/bulk/hcp/deformed/:
+- Enn-local
+/unaries/bulk/hcp/reference/:
+- Enn-wide
+- Enn-fine
+- relax
+- elastic
+- phonons
+/unaries/bulk/hcp/shaken/hcp.shakesmallsuper2corrected.1.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp.shakesmallsuper2corrected.2.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp.shakesmallsuper2corrected.3.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp.shakesmallsuper2corrected.4.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp.shakesmallsuper2corrected.5.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp.shakesmallsuper3corrected.1.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp.shakesmallsuper3corrected.2.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp.shakesmallsuper3corrected.3.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp.shakesmallsuper3corrected.4.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp.shakesmallsuper3corrected.5.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp16.shake.1.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp16.shake.2.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp16.shake.3.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp16.shake.4.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp16.shake.5.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp16.shakesmall.1.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp16.shakesmall.2.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp16.shakesmall.3.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp16.shakesmall.4.cfg:
+- Enn-local
+/unaries/bulk/hcp/shaken/hcp16.shakesmall.5.cfg:
+- Enn-local
+/unaries/bulk/linear/reference/:
+- Enn-local
+/unaries/bulk/mu/reference/:
+- Enn-local
+/unaries/bulk/omega/deformed/:
+- Enn-local
+/unaries/bulk/omega/reference/:
+- Enn-wide
+- Enn-fine
+- relax
+- elastic
+- phonons
+/unaries/bulk/omega/shaken/omega.shake.1.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shake.2.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shake.3.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shake.4.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shake.5.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmall.1.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmall.2.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmall.3.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmall.4.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmall.5.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmallsuper2corrected.1.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmallsuper2corrected.2.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmallsuper2corrected.3.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmallsuper2corrected.4.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmallsuper2corrected.5.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmallsuper3corrected.1.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmallsuper3corrected.2.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmallsuper3corrected.3.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmallsuper3corrected.4.cfg:
+- Enn-local
+/unaries/bulk/omega/shaken/omega.shakesmallsuper3corrected.5.cfg:
+- Enn-local
+/unaries/bulk/other/reference/:
+- Enn-local
+/unaries/bulk/sc/reference/:
+- Enn-wide
+- Enn-fine
+- relax
+- elastic
+- phonons
+/unaries/bulk/sc/shaken/sc.shakesmallsuper2corrected.1.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc.shakesmallsuper2corrected.2.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc.shakesmallsuper2corrected.3.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc.shakesmallsuper2corrected.4.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc.shakesmallsuper2corrected.5.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc.shakesmallsuper3corrected.1.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc.shakesmallsuper3corrected.2.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc.shakesmallsuper3corrected.3.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc.shakesmallsuper3corrected.4.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc.shakesmallsuper3corrected.5.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc8.shake.1.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc8.shake.2.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc8.shake.3.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc8.shake.4.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc8.shake.5.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc8.shakesmall.1.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc8.shakesmall.2.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc8.shakesmall.3.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc8.shakesmall.4.cfg:
+- Enn-local
+/unaries/bulk/sc/shaken/sc8.shakesmall.5.cfg:
+- Enn-local
+/unaries/bulk/sigma/reference/:
+- Enn-local
+/unaries/bulk/simplehex/reference/:
+- Enn-wide
+- Enn-fine
+- relax
+- elastic
+- phonons
+/unaries/complex/adatom:
+- static
+/unaries/grainboundaries/MaterialsProject/Mo:
+- static
+/unaries/grainboundaries/MaterialsProject/Ni:
+- static
+/unaries/grainboundaries/MaterialsProject/Zr:
+- static
+/unaries/interstitials/bcc/100_dumbbell/bcc_100_dumbbell_333.cfg:
+- static
+/unaries/interstitials/bcc/110_dumbbell/bcc_110_dumbbell_333.cfg:
+- static
+/unaries/interstitials/bcc/111_crowdion/bcc_111_crowdion_333.cfg:
+- static
+/unaries/interstitials/bcc/111_dumbbell/bcc_111_dumbbell_333.cfg:
+- static
+/unaries/interstitials/bcc/octahedral/bcc_octahedral_333.cfg:
+- static
+/unaries/stackingfaults/fcc:
+- static
+/unaries/stackingfaults/hcp:
+- static
+/unaries/surfaces/MaterialsProject/Mo:
+- static
+/unaries/surfaces/MaterialsProject/Ni:
+- static
+/unaries/surfaces/MaterialsProject/Si:
+- static
+/unaries/surfaces/MaterialsProject/Ti:
+- static
+/unaries/surfaces/bcc/100/basic:
+- static
+/unaries/surfaces/bcc/100/reconstruction:
+- static
+/unaries/surfaces/bcc/100/tensile:
+- static
+/unaries/surfaces/bcc/110/basic:
+- static
+/unaries/surfaces/bcc/111/basic:
+- static
+/unaries/surfaces/bcc/112/basic:
+- static
+/unaries/surfaces/dia/100/basic:
+- static
+/unaries/surfaces/fcc/100/basic:
+- static
+/unaries/surfaces/fcc/100/tensile:
+- static
+/unaries/surfaces/fcc/110/basic:
+- static
+/unaries/surfaces/fcc/110/tensile:
+- static
+/unaries/surfaces/fcc/111/basic:
+- static
+/unaries/surfaces/fcc/111/tensile:
+- static
+/unaries/surfaces/fcc/112/basic:
+- static
+/unaries/vacancies/A15/double:
+- static
+/unaries/vacancies/A15/single:
+- static
+/unaries/vacancies/bcc/double:
+- static
+/unaries/vacancies/bcc/single/bcc2.smallsuper2corrected.vac1.1.cfg:
+- static
+/unaries/vacancies/bcc/single/bcc2.smallsuper3corrected.vac1.1.cfg:
+- static
+/unaries/vacancies/bcc/single/bcc_vacA_333.cfg:
+- static
+/unaries/vacancies/bcc/single/bcc_vacTrans_333.cfg:
+- static
+/unaries/vacancies/betatin/double:
+- static
+/unaries/vacancies/betatin/single:
+- static
+/unaries/vacancies/dhcp/double:
+- static
+/unaries/vacancies/dhcp/single:
+- static
+/unaries/vacancies/dia/double/diamondc.smallsuper2corrected.vac2.1.cfg:
+- static
+/unaries/vacancies/dia/single/diamondc.smallsuper2corrected.vac1.1.cfg:
+- static
+/unaries/vacancies/fcc/double/fcc4.smallsuper2corrected.vac2.1.cfg:
+- static
+/unaries/vacancies/fcc/double/fcc4.smallsuper3corrected.vac2.1.cfg:
+- static
+/unaries/vacancies/fcc/double/fcc4.smallsuper3corrected.vac2.2.cfg:
+- static
+/unaries/vacancies/fcc/single/fcc4.smallsuper2corrected.vac1.1.cfg:
+- static
+/unaries/vacancies/fcc/single/fcc4.smallsuper3corrected.vac1.1.cfg:
+- static
+/unaries/vacancies/fcc/single/fcc_vacTrans_333.cfg:
+- static
+#/unaries/clusters/Doye:
+#- random: 500
+#- Enn-local
+#/unaries/clusters/Mueller:
+#- random: 500
+#- Enn-local
+#/unaries/clusters/bulkfragments:
+#- random: 500
+#- Enn-local
+#/unaries/clusters/random:
+#- random: 5000
+#- static
+#/unaries/clusters/samplingsmall:
+#- random: 2000
+#- static
+#/unaries/random/Jenke:
+#- random: 1000
+#- Enn-local

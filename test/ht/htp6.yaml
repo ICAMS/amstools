@@ -1,0 +1,7 @@
+seed: 42
+composition:
+- 'Al'
+- 'Ni'
+- 'Zn'
+/ternaries/bulk/Al3Ti-D0_22/reference/gen_23_D0_22_Al3Ti.cfg:
+- Enn-local

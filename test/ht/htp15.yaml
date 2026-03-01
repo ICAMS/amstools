@@ -1,0 +1,9 @@
+seed: 42
+composition:
+- 'Ba'
+- 'Ti'
+- 'O'
+/ternaries/bulk/ABO3/reference/perovskite.cfg:
+- composition: {EleA: ['Ba','Ca','Sr'], EleB: ['Ti','Sn'], EleC: ['O']}
+#- random: 6
+- Enn-local

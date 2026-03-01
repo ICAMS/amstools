@@ -1,0 +1,10 @@
+seed: 42
+composition:
+- 'Al'
+- 'Cu'
+/binaries/bulk/MoPt2/reference/gen_182_MoPt2.cfg:
+- relax
+- elastic: {eps_range: 0.01, num_of_point: 3}
+- Enn-local
+- static
+- murnaghan: {num_of_point: 7, volume_range: 0.1}
