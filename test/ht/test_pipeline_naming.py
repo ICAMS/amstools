@@ -124,4 +124,4 @@ def test_pipeline_with_emt_calculator():
         assert os.path.exists(step_dir), f"Step directory {step_dir} was not created."
 
     # Clean up after the test
-    # shutil.rmtree(output_dir)
+    shutil.rmtree(output_dir)
